@@ -39,4 +39,3 @@ def train_model(df):
     with open('Models/best_model.pkl', 'wb') as f:
         pickle.dump(best_model, f)
 
-    return best_model_name, best_model, best_accuracy
