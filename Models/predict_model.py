@@ -9,4 +9,8 @@ def load_model(model_path='Models/best_model.pkl'):
 
 def make_prediction(input_data, model):
     prediction = model.predict(input_data)
-    return prediction
+    pred =  str(prediction[0])
+    if(pred=='0'):
+        return "NO"
+    else:
+        return "YES"

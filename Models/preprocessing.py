@@ -6,7 +6,7 @@ def load_data(file_path):
 
 def encode_categorical(df):
     encoder = LabelEncoder()
-    categorical_cols = ['Attrition','BusinessTravel', 'Department', 'EducationField',
+    categorical_cols = ['BusinessTravel', 'Department', 'EducationField',
                         'Gender', 'JobRole', 'MaritalStatus', 'OverTime']
     for col in categorical_cols:
         df[col] = encoder.fit_transform(df[col])
